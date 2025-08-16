@@ -1,0 +1,16 @@
+.title{
+    text-align: center;
+    justify-content: center;
+}
+
+.lista-tarefas{
+    width: 800px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.concluido{
+    color: green;
+}
