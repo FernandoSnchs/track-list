@@ -1,3 +1,118 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Corpo com fundo suave */
+  body {
+    background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+    color: #333;
+    padding: 40px;
+  }
+  
+  /* Título centralizado e estilizado */
+  .title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  /* Contador de tarefas */
+  .contador {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Input e botão de adicionar */
+  #task-input {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+  
+  #Add-B {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  #Add-B:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Lista de tarefas */
+  .lista-tarefas {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lista-tarefas ul {
+    list-style: none;
+  }
+  
+  /* Cada tarefa */
+  .lista-tarefas li {
+    background-color: #ecf0f1;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.2s ease;
+  }
+  
+  .lista-tarefas li:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Texto da tarefa */
+  .lista-tarefas li span {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 1rem;
+  }
+  
+  /* Botões de tarefa */
+  .lista-tarefas li button {
+    margin-left: 10px;
+    background-color: #bdc3c7;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .lista-tarefas li button:hover {
+    background-color: #95a5a6;
+  }
+  
+  /* Tarefa concluída */
+  .concluido {
+    color: green;
+    text-decoration: line-through;
+    font-style: italic;
+  }
+
 .title{
     text-align: center;
     justify-content: center;
@@ -14,3 +129,39 @@
 .concluido{
     color: green;
 }
+.lista-tarefas li{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    column-gap: 10px;
+}
+.lista-tarefas li button{
+    background-color: white;
+    width: 70px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 18px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .tarefa {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  .icone-botao {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.0rem;
+    color: #2c3e50;
+    transition: color 0.3s ease;
+  }
+  
+  .icone-botao:hover {
+    color: #3498db;
+  }
